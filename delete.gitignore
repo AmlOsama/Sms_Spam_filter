@@ -1,0 +1,9 @@
+# Ignore all .log files
+*.log
+
+# Ignore the entire temp directory
+temp/
+git status -uno
+git status --porcelain | grep '^??' | cut -c4- >> .gitignore
+git status -uno
+
